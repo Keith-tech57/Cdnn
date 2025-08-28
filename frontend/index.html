@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Upload & Share</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📁 Media Upload & Share</h1>
+            <p>Upload any file and get a shareable link instantly</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <div class="upload-icon">📤</div>
+                        <h3>Drop files here or click to browse</h3>
+                        <p>Supports images, videos, audio, documents and more</p>
+                        <p class="file-limit">Max file size: 100MB</p>
+                    </div>
+                    <input type="file" id="fileInput" accept="*/*" multiple>
+                </div>
+
+                <div class="upload-progress" id="uploadProgress" style="display: none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p id="progressText">Uploading...</p>
+                </div>
+            </div>
+
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <h2>📋 Upload Results</h2>
+                <div id="resultsList"></div>
+            </div>
+
+            <div class="recent-uploads" id="recentUploads" style="display: none;">
+                <h2>🕒 Recent Uploads</h2>
+                <div id="recentList"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with ❤️ for easy file sharing</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
